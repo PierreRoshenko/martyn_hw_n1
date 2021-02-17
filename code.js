@@ -17,6 +17,7 @@ const roundedBeerPrice = Math.trunc(beerPrice);
 const roundedSquidPrice = Math.trunc(squidPrise);
 const roundedPringlesPrice = Math.trunc(pringlesPrise);
 const roundedSum = roundedBeerPrice + roundedSquidPrice + roundedPringlesPrice;
+document.write(`Округлена сума в меншу сторону: ${roundedSum}<br><hr>`);
 
 //Виведіть суму товарів округлену до сотень. (Наприклад якщо вийшло 260, то виведіть 300)
 document.write(`Округлена сума до сотень: ${Math.round(sumItems / 100) * 100}<br><hr>`);
