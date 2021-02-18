@@ -30,10 +30,8 @@ if (roundedSum % 2 !== 0) {
 document.write(`Чи парна сума всіх товарів (округлена в меншу сторону)?: ${isRoundedSumEven} <br><hr>`);
 
 //Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн.
-const beerPriceRemainder = 500 - beerPrice;
-const squidPriseRemainder = 500 - squidPrise;
-const pringlesPriseRemainder = 500 - pringlesPrise;
-document.write(`Сума решти  із 500: ${beerPriceRemainder + squidPriseRemainder + pringlesPriseRemainder} "<br><hr>`);
+const bill = 500;
+document.write(`Сума решти  із 500: ${bill - sumItems} <br><hr>`);
 
 //Виведіть середнє значення цін, округлене до другого знаку після коми
 document.write(`Середнє значення цін: ${(sumItems / 3).toFixed(2)}<br><hr>`);
